@@ -8,27 +8,9 @@
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #0f172a; color: #f8fafc; text-align: center; }
         header { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color: white; padding: 60px 20px; border-bottom: 1px solid #334155; }
         
-        /* تنسيق مخصص لحماية وإبراز تفاصيل الشعار المستطيل الفخم */
-        /* التنسيق البرمجي المصلح لحجم الشعار والحاوية البيضاء */
-       /* التنسيق البرمجي المصلح لحجم الشعار والحاوية البيضاء */
-.logo1-container { 
-    background-color: #ffffff; 
-    display: inline-block; 
-    padding: <span style="color: red; font-weight: bold;">30px 30px</span>; /* التحكم في الفراغ الداخلي للحاوية البيضاء حول اللوجو */
-    border-radius: <span style="color: red; font-weight: bold;">12px</span>; /* درجة انحناء زوايا الحاوية البيضاء */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
-    margin-bottom: <span style="color: red; font-weight: bold;">25px</span>; /* المسافة السفلية بين الحاوية والكلام الذي تحتها */
-}
-
-.logo1-img { 
-    width: 100%; 
-    max-width: <span style="color: red; font-weight: bold;">250px</span>; /* العرض الأقصى للوجو (إذا أردت تصغير اللوجو اجعل الرقم 250px مثلاً) */
-    height: auto; 
-    display: block; 
-    object-fit: contain; 
-}
-
-
+        /* التنسيق البرمجي المصلح لتوسيط الشعار المستطيل ومنع تمدده */
+        .logo-container { background-color: #ffffff; display: block; padding: 15px 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); margin: 0 auto 25px auto; max-width: 320px; }
+        .logo-img { width: 100%; max-width: 280px; height: auto; display: block; margin: 0 auto; object-fit: contain; }
         
         .subtitle { font-size: 1.3em; color: #94a3b8; margin-top: 15px; font-weight: 300; }
         .btn-contact { display: inline-block; background-color: #0ea5e9; color: white; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 25px; transition: all 0.3s ease; box-shadow: 0 4px 14px rgba(14, 165, 233, 0.4); }
@@ -64,18 +46,16 @@
 <body>
 
     <header>
-        <!-- إظهار اللوجو المستطيل بشكل صحيح -->
-        <div class="logo1-container">
-            <img src="logo1.png" alt="Salahi Interior Design Logo" class="logo1-img">
+        <!-- هنا تم إدراج الحاوية المصلحة وتعديل اسم اللوجو إلى logo1.png بنجاح -->
+        <div class="logo-container">
+            <img src="logo1.png" alt="Salahi Interior Design Logo" class="logo-img">
         </div>
         
         <p class="subtitle">مهندس ومصمّم مجسمات وتصاميم هندسية ثلاثية أبعاد (3D Designer)</p>
         
-        <!-- تم حل المشكلة وإضافة رقم الواتساب بالصيغة البرمجية الصحيحة هنا -->
-              <a href="https://wa.me/0096565664381" target="_blank" class="btn-contact">تواصل معي مباشرة عبر الواتساب</a>
-            <!-- زر البريد الإلكتروني الجديد مدمج به إيميلك الحقيقي -->
+        <!-- أزرار التواصل المباشرة والكاملة -->
+        <a href="https://wa.me/0096565664381" target="_blank" class="btn-contact">تواصل معي مباشرة عبر الواتساب</a>
         <a href="mailto:m.salahi@outlook.com" class="btn-contact" style="background-color: #334155; box-shadow: 0 4px 14px rgba(51, 65, 85, 0.4); margin-right: 10px;">أرسل إيميل للمكتب</a>
-
     </header>
 
     <!-- قسم الخدمات -->
@@ -91,7 +71,7 @@
         </div>
         <div class="service-card">
             <h3>3. الإخراج المعماري الواقعي</h3>
-            <p>إنتاج لقطات ومناظير فائقة الدقة (Rendering) تُظهر تفاصيل المواد, الخامات، وتوزيع الإضاءة بدقة متناهية لتتخيل مشروعك بأقرب صورة للواقع.</p>
+            <p>إنتاج لقطات ومناظير فائقة الدقة (Rendering) تُظهر تفاصيل المواد، الخامات، وتوزيع الإضاءة بدقة متناهية لتتخيل مشروعك بأقرب صورة للواقع.</p>
         </div>
         <div class="service-card">
             <h3>4. المخططات التنفيذية وتوصيف المواد</h3>
@@ -109,7 +89,7 @@
         </div>
     </section>
 
-    <!-- معرض الأعمال (تم إصلاح الروابط لتصبح جاهزة لاستقبال صورك لاحقاً) -->
+    <!-- معرض الأعمال جاهز للصور لاحقاً -->
     <h2 class="section-title">معرض المشاريع والتصاميم الهندسية</h2>
     <section class="gallery">
         <div class="card">
