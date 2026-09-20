@@ -1,52 +1,65 @@
-# Salahi3D | 3D Engineering & Interior Design Portfolio
+# Salahi3D | Interior Design & Architectural Visualization in Kuwait
 
-Welcome to the official repository of **Salahi3D**. This profile showcases professional 3D architectural rendering, interior designs, and spatial planning tailored for premium residential and commercial projects.
+**تصميم داخلي ومعماري ثلاثي الأبعاد في الكويت — للمساحات السكنية والتجارية.**
 
----
-
-## 🛠️ Engineering & Consulting Services
-
-### 1. Quantity Surveying & Space Planning
-Accurate on-site measurement lifting, transformed into highly detailed 2D architectural layouts designed for intelligent space utilization and seamless traffic flow.
-
-### 2. 3D Architectural & Interior Design
-Crafting unique visual identities for commercial and residential developments. We turn concepts into immersive virtual realities, allowing you to experience volume, light, and mass before construction begins.
-
-### 3. Realistic Architectural Rendering
-High-fidelity rendering output highlighting material textures, finishes, and precise lighting distribution to visualize projects exactly as they will look in reality.
-
-### 4. Shop Drawings & Material Specifications
-Comprehensive, construction-ready execution plans and shop drawings tailored for immediate on-site implementation, accompanied by rigorous material schedule sheets.
+**[زيارة الموقع · Visit the website](https://m-salahi.github.io/my-portfolio/)** · [واتساب · WhatsApp](https://wa.me/96565664381) · [البريد الإلكتروني · Email](mailto:m.salahi@outlook.com)
 
 ---
 
-## 👨‍💻 About The Engineer
+<div dir="rtl">
 
-Driven by a passion for architectural innovation since **2012**. Over the past decade, I have conceptualized, designed, and delivered an extensive array of high-end residential spaces and commercially successful ventures. 
+## مساحة تشبهك. وتفاصيل تصنع الفرق.
 
-My technical foundation is further backed by **3 years of hands-on experience as an Executive Director for an interior design firm in the State of Kuwait**. This tenure provided deep command over the Gulf market demands, project budget management, and end-to-end execution from raw creative concepts to final turnkey finishes. 
+أنا محمد صلاحي، مهندس ومصمّم خلف **Salahi3D**. أساعدك على تحويل فكرتك إلى مساحة تجمع بين جمال التفاصيل وراحة الاستخدام، من دراسة المقاسات إلى التصوّر ثلاثي الأبعاد والمخططات التنفيذية.
+
+بدأت رحلتي في التصميم الهندسي عام **2012**، وعزّزت خبرتي بالعمل **مديراً تنفيذياً لشركة تصميم داخلي في الكويت لمدة ثلاث سنوات**، مع خبرة في المشاريع السكنية والتجارية وفهم متطلبات السوق الخليجي.
+
+## خدمات التصميم
+
+- **رفع مقاسات الموقع وتخطيط المساحات:** تحويل المقاسات إلى مخططات ثنائية الأبعاد وتوزيع عملي للفراغات.
+- **التصميم الداخلي والمعماري ثلاثي الأبعاد:** توضيح توزيع الأثاث والكتل وتناسق التفاصيل قبل التنفيذ.
+- **الإخراج المعماري الواقعي:** مناظير توضّح الخامات والإضاءة والألوان وتساعد على تقييم خيارات التصميم.
+- **المخططات التنفيذية وتوصيف المواد:** تفاصيل ومخططات وجداول خامات لتسهيل تطبيق التصميم في الموقع.
+
+## الأعمال ونماذج المشاريع
+
+معرض الصور قيد التجهيز، وستُضاف صور المشاريع وتفاصيلها لاحقاً. يمكنك حالياً [طلب نماذج أعمال عبر واتساب](https://wa.me/96565664381) تناسب نوع مشروعك، أو [زيارة الموقع للتعرّف إلى الخدمات](https://m-salahi.github.io/my-portfolio/#services).
+
+## لنبدأ مشروعك
+
+عند التواصل، أرسل **نوع المشروع، موقعه والمساحة التقريبية**، وأرفق المخطط أو صور المكان إن توفرت. هذه المعلومات تساعد على فهم احتياجك ومناقشة نطاق التصميم المناسب.
+
+- **واتساب:** [تواصل مع محمد صلاحي](https://wa.me/96565664381)
+- **البريد:** [m.salahi@outlook.com](mailto:m.salahi@outlook.com)
+- **الهاتف:** <bdi dir="ltr">+965 6566 4381</bdi>
+
+</div>
 
 ---
 
-## 📂 Project Gallery
+## About Salahi3D
 
-### 🏢 Commercial Facade & Architectural Layouts
-*Detailed descriptions of external facades, engineering software stacks used, architectural rendering variables, and structural lighting layouts.*
+I'm **Mohammad Salahi**, the engineer and designer behind Salahi3D. My work covers **interior design, 3D architectural visualization and space planning** for residential and commercial projects in Kuwait.
 
-### 🛋️ High-End Interior Environments
-*Comprehensive breakdowns of modern and classical spatial programming, bespoke furniture placement, and material texture mapping.*
+My design experience began in **2012** and includes **three years as Executive Director of an interior design company in Kuwait**.
 
-### 📐 Structural Shop Drawings
-*Technical analysis, execution blue-prints, and 3D architectural projections delivered for past corporate and private clientele.*
+### Services
+
+- **On-site measurement & space planning:** measured 2D layouts and practical space distribution.
+- **3D architectural & interior design:** visual concepts for furniture, volumes and interior details.
+- **Architectural rendering:** views that communicate materials, finishes, lighting and colours.
+- **Shop drawings & material specifications:** technical details and material schedules to support implementation.
+
+### Project samples & enquiries
+
+The project photo gallery is being prepared. [Request relevant work samples on WhatsApp](https://wa.me/96565664381) or [explore the website](https://m-salahi.github.io/my-portfolio/).
+
+For an enquiry, share your project type, location and approximate floor area, along with any existing plans or photos.
+
+**[WhatsApp](https://wa.me/96565664381)** · **[m.salahi@outlook.com](mailto:m.salahi@outlook.com)**
 
 ---
 
-## 📩 Contact & Collaboration
+This repository contains the source of the Salahi3D website, published with GitHub Pages.
 
-Looking to collaborate or need a custom engineering consultation? Get in touch immediately:
-
-* **WhatsApp:** [Direct Chat](https://wa.me) *(Replace YOUR_PHONE_NUMBER with your full number including country code)*
-* **Email:** [Office Inbox](mailto:YOUR_EMAIL@example.com) *(Replace YOUR_EMAIL@example.com with your actual email)*
-
----
-*All Rights Reserved © 2026 | Salahi3D Engineering Portfolio*
+© 2026 Salahi3D. All rights reserved. جميع الحقوق محفوظة.
