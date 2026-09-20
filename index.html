@@ -10,8 +10,24 @@
         
         /* تنسيق مخصص لحماية وإبراز تفاصيل الشعار المستطيل الفخم */
         /* التنسيق البرمجي المصلح لحجم الشعار والحاوية البيضاء */
-        .logo-container { background-color: #ffffff; display: inline-block; padding: 15px 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); margin-bottom: 25px; }
-        .logo-img { width: 100%; max-width: 320px; height: auto; display: block; object-fit: contain; }
+       /* التنسيق البرمجي المصلح لحجم الشعار والحاوية البيضاء */
+.logo-container { 
+    background-color: #ffffff; 
+    display: inline-block; 
+    padding: <span style="color: red; font-weight: bold;">15px 30px</span>; /* التحكم في الفراغ الداخلي للحاوية البيضاء حول اللوجو */
+    border-radius: <span style="color: red; font-weight: bold;">12px</span>; /* درجة انحناء زوايا الحاوية البيضاء */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+    margin-bottom: <span style="color: red; font-weight: bold;">25px</span>; /* المسافة السفلية بين الحاوية والكلام الذي تحتها */
+}
+
+.logo-img { 
+    width: 100%; 
+    max-width: <span style="color: red; font-weight: bold;">320px</span>; /* العرض الأقصى للوجو (إذا أردت تصغير اللوجو اجعل الرقم 250px مثلاً) */
+    height: auto; 
+    display: block; 
+    object-fit: contain; 
+}
+
 
         
         .subtitle { font-size: 1.3em; color: #94a3b8; margin-top: 15px; font-weight: 300; }
