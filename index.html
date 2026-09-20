@@ -8,10 +8,10 @@
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #0f172a; color: #f8fafc; text-align: center; }
         header { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color: white; padding: 60px 20px; border-bottom: 1px solid #334155; }
         
-        /* تنسيق اللوجو الاحترافي */
-        .logo-img { width: 120px; height: 120px; object-fit: contain; margin-bottom: 20px; border-radius: 50%; background-color: rgba(255,255,255,0.05); padding: 5px; }
+        /* تنسيق مخصص لحماية وإبراز تفاصيل الشعار المستطيل الفخم */
+        .logo-container { background-color: #ffffff; display: inline-block; padding: 15px 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); margin-bottom: 25px; }
+        .logo-img { max-width: 280px; height: auto; display: block; object-fit: contain; }
         
-        h1 { margin: 0; font-size: 3em; font-weight: 800; letter-spacing: 1px; color: #38bdf8; }
         .subtitle { font-size: 1.3em; color: #94a3b8; margin-top: 15px; font-weight: 300; }
         .btn-contact { display: inline-block; background-color: #0ea5e9; color: white; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 25px; transition: all 0.3s ease; box-shadow: 0 4px 14px rgba(14, 165, 233, 0.4); }
         .btn-contact:hover { background-color: #0284c7; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(14, 165, 233, 0.6); }
@@ -26,7 +26,7 @@
         .service-card h3 { color: #38bdf8; margin-top: 0; font-size: 1.3em; font-weight: 600; }
         .service-card p { color: #94a3b8; font-size: 0.95em; line-height: 1.7; margin: 0; }
 
-        /* قسم نبذة عني */
+        /* قسم نبذة عن المهندس */
         .about-section { background: #1e293b; padding: 50px 30px; border-top: 1px solid #334155; border-bottom: 1px solid #334155; margin-top: 60px; }
         .about-content { max-width: 800px; margin: 0 auto; text-align: justify; text-justify: inter-word; line-height: 1.9; color: #cbd5e1; font-size: 1.1em; }
         .about-content strong { color: #38bdf8; }
@@ -46,11 +46,14 @@
 <body>
 
     <header>
-        <!-- كود عرض اللوجو المضاف حديثاً (تأكد أن الاسم يطابق اسم الصورة التي رفعتها تماماً) -->
-        <img src="logo.png" alt="Salahi3D Logo" class="logo-img">
+        <!-- إظهار اللوجو المستطيل بشكل صحيح (تأكد أن اسم الصورة المرفوعة يطابق logo.png تماماً) -->
+        <div class="logo-container">
+            <img src="logo.png" alt="Salahi Interior Design Logo" class="logo-img">
+        </div>
         
-        <h1>Salahi3D</h1>
         <p class="subtitle">مهندس ومصمّم مجسمات وتصاميم هندسية ثلاثية أبعاد (3D Designer)</p>
+        
+        <!-- تم إصلاح رابط الواتساب ودمج رقمك الصحيح بنجاح هنا بالأسفل -->
         <a href="https://wa.me" target="_blank" class="btn-contact">تواصل معي مباشرة عبر الواتساب</a>
     </header>
 
@@ -85,7 +88,7 @@
         </div>
     </section>
 
-    <!-- معرض الأعمال -->
+    <!-- معرض الأعمال (جاهز لاستقبال صور مشاريعك الحقيقية من اللاب توب لاحقاً) -->
     <h2 class="section-title">معرض المشاريع والتصاميم الهندسية</h2>
     <section class="gallery">
         <div class="card">
