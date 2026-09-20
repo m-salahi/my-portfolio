@@ -1,123 +1,95 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>معرض أعمال Salahi3D | تصاميم هندسية ثلاثية الأبعاد</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #0f172a; color: #f8fafc; text-align: center; }
-        header { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color: white; padding: 60px 20px; border-bottom: 1px solid #334155; }
-        
-        /* التنسيق البرمجي المصلح لتوسيط الشعار المستطيل ومنع تمدده */
-        .logo-container { background-color: #ffffff; display: block; padding: 15px 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); margin: 0 auto 25px auto; max-width: 320px; }
-        .logo-img { width: 100%; max-width: 280px; height: auto; display: block; margin: 0 auto; object-fit: contain; }
-        
-        .subtitle { font-size: 1.3em; color: #94a3b8; margin-top: 15px; font-weight: 300; }
-        .btn-contact { display: inline-block; background-color: #0ea5e9; color: white; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 25px; transition: all 0.3s ease; box-shadow: 0 4px 14px rgba(14, 165, 233, 0.4); }
-        .btn-contact:hover { background-color: #0284c7; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(14, 165, 233, 0.6); }
-        
-        .section-title { margin-top: 70px; color: #f8fafc; font-size: 2.2em; font-weight: 700; position: relative; padding-bottom: 10px; }
-        .section-title::after { content: ''; display: block; width: 60px; height: 4px; background: #38bdf8; margin: 10px auto 0 auto; border-radius: 2px; }
-        
-        /* قسم الخدمات */
-        .services-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; padding: 40px; max-width: 1200px; margin: 0 auto; }
-        .service-card { background: #1e293b; padding: 30px 20px; border-radius: 16px; border: 1px solid #334155; text-align: right; transition: all 0.3s ease; }
-        .service-card:hover { border-color: #38bdf8; transform: translateY(-3px); }
-        .service-card h3 { color: #38bdf8; margin-top: 0; font-size: 1.3em; font-weight: 600; }
-        .service-card p { color: #94a3b8; font-size: 0.95em; line-height: 1.7; margin: 0; }
-
-        /* قسم نبذة عن المهندس */
-        .about-section { background: #1e293b; padding: 50px 30px; border-top: 1px solid #334155; border-bottom: 1px solid #334155; margin-top: 60px; }
-        .about-content { max-width: 800px; margin: 0 auto; text-align: justify; text-justify: inter-word; line-height: 1.9; color: #cbd5e1; font-size: 1.1em; }
-        .about-content strong { color: #38bdf8; }
-
-        /* معرض الأعمال */
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 35px; padding: 40px; max-width: 1200px; margin: 0 auto; }
-        .card { background: #1e293b; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.25); transition: all 0.3s ease; border: 1px solid #334155; }
-        .card:hover { transform: translateY(-8px); border-color: #38bdf8; box-shadow: 0 15px 35px rgba(56, 189, 248, 0.15); }
-        .card img { width: 100%; height: 260px; object-fit: cover; background-color: #1e293b; }
-        .card-content { padding: 25px; text-align: right; }
-        .card-content h3 { margin: 0 0 12px 0; color: #38bdf8; font-size: 1.4em; font-weight: 600; }
-        .card-content p { color: #94a3b8; font-size: 0.95em; line-height: 1.7; margin: 0; }
-        
-        footer { background-color: #090d16; color: #64748b; padding: 30px; font-size: 0.95em; margin-top: 80px; border-top: 1px solid #1e293b; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111d28">
+  <meta name="description" content="Salahi3D للتصميم الداخلي والمعماري ثلاثي الأبعاد في الكويت. تخطيط مساحات، إخراج واقعي ومخططات تنفيذية، بخبرة في التصميم منذ 2012.">
+  <title>Salahi3D | تصميم داخلي ومعماري في الكويت</title>
+  <link rel="canonical" href="https://m-salahi.github.io/my-portfolio/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_KW">
+  <meta property="og:title" content="Salahi3D | مساحة تشبهك. وتفاصيل تصنع الفرق.">
+  <meta property="og:description" content="تصميم داخلي ومعماري، من دراسة المساحة إلى التصور ثلاثي الأبعاد والمخططات التنفيذية.">
+  <meta property="og:url" content="https://m-salahi.github.io/my-portfolio/">
+  <meta property="og:image" content="https://m-salahi.github.io/my-portfolio/logo1.png">
+  <style>
+    :root{--navy:#111d28;--panel:#192733;--gold:#dbc08a;--paper:#f4f1e9;--ink:#1d2a33;--muted:#aebbc5;--line:rgba(219,192,138,.23)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:110px}body{margin:0;background:var(--navy);color:var(--paper);font-family:Tahoma,"Segoe UI",Arial,sans-serif;line-height:1.85}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}button,input,select,textarea{font:inherit}::selection{background:var(--gold);color:var(--navy)}:focus-visible{outline:3px solid var(--gold);outline-offset:5px}p,h1,h2,h3{margin:0}p{color:var(--muted)}.wrap{width:min(1160px,calc(100% - 48px));margin-inline:auto}.skip{position:fixed;top:8px;right:8px;z-index:20;background:var(--paper);color:var(--ink);padding:12px;transform:translateY(-160%)}.skip:focus{transform:translateY(0)}
+    .site-header{border-bottom:1px solid var(--line);background:var(--navy)}.nav{min-height:94px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{background:white;border-radius:4px;padding:7px 12px;width:166px;flex-shrink:0}.brand img{width:142px;height:55px;object-fit:contain}.nav-links{display:flex;gap:28px;align-items:center;font-size:.9rem}.nav-links a{padding-block:10px}.nav-links a:hover{color:var(--gold)}.nav-contact{color:var(--gold);border-bottom:1px solid var(--gold)}
+    .hero{padding:76px 0 54px;display:grid;grid-template-columns:1.12fr 1fr;gap:64px;align-items:center}.eyebrow{display:flex;align-items:center;gap:12px;color:var(--gold);font-size:.78rem;letter-spacing:.03em;margin-bottom:22px}.eyebrow:before{content:"";width:30px;height:1px;background:currentColor}.hero h1{font-size:clamp(2.35rem,4.2vw,3.9rem);line-height:1.4;font-weight:500;letter-spacing:-1.7px}.hero h1 span{color:var(--gold)}.hero-copy{margin-top:22px;max-width:480px;font-size:1rem;line-height:2}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.button{display:inline-flex;align-items:center;justify-content:center;gap:22px;min-height:50px;padding:11px 23px;border:1px solid var(--gold);background:var(--gold);color:var(--navy);font-weight:700;font-size:.87rem;border-radius:3px;transition:background .2s,transform .2s}.button:hover{background:#e9d3a8;transform:translateY(-2px)}.button.secondary{color:var(--paper);border-color:#687680;background:transparent}.button.secondary:hover{background:var(--panel)}.hero-note{margin-top:22px;font-size:.76rem;color:var(--muted)}
+    .drawing{position:relative;min-width:0;margin:0;border:1px solid var(--line);background:linear-gradient(135deg,#243441,#15222e);padding:26px 22px 18px}.drawing:before{content:"";position:absolute;inset:12px;border:1px solid rgba(219,192,138,.09);pointer-events:none}.drawing-head,.drawing figcaption{display:flex;justify-content:space-between;gap:10px;color:var(--gold);font-size:.65rem;position:relative}.drawing svg{width:100%;height:auto;display:block;margin-block:18px 10px}.drawing figcaption{color:var(--muted);border-top:1px solid var(--line);padding-top:12px}.drawing-label{direction:ltr;letter-spacing:2px}
+    .credentials{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding-block:24px;margin-bottom:76px}.credential{padding-inline:28px;border-inline-start:1px solid var(--line)}.credential:first-child{padding-inline-start:0;border:0}.credential strong{display:block;color:var(--gold);font-size:1.3rem;font-weight:500}.credential span{font-size:.8rem;color:var(--muted)}
+    section{scroll-margin-top:28px}.section-heading{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:32px}.section-heading h2,.about h2,.contact h2{font-size:clamp(1.65rem,3vw,2.3rem);line-height:1.5;font-weight:500}.section-heading p{max-width:360px;font-size:.88rem}.section-heading .eyebrow{margin-bottom:10px}.services{padding:70px 0 80px;background:var(--paper);color:var(--ink)}.services .eyebrow{color:#7f622e}.services p{color:#59636b}.service-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}.service{padding:25px 0 8px;border-top:1px solid #c8c2b7}.service-no{font-size:.75rem;color:#856737;display:block;direction:ltr;text-align:right;margin-bottom:25px}.service h3{font-size:1.05rem;line-height:1.7;font-weight:600;margin-bottom:14px}.service p{font-size:.83rem;line-height:2}
+    .work{padding-block:80px}.work-panel{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;border:1px solid var(--line);padding:36px;background:var(--panel)}.work-panel h3{font-weight:500;font-size:1.35rem;margin-bottom:12px}.work-panel p{font-size:.88rem;max-width:490px}.work-types{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.tag{font-size:.74rem;padding:5px 12px;border:1px solid #53616c;border-radius:30px;color:#dce3e8}.work-cta{border-inline-start:1px solid var(--line);padding-inline-start:36px}.work-cta .button{margin-bottom:14px}.work-cta p{font-size:.78rem}
+    .about{padding:70px 0;border-block:1px solid var(--line)}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}.about p{font-size:.96rem;line-height:2.2}.about p+p{margin-top:18px}.about strong{color:var(--paper);font-weight:500}.about .eyebrow{margin-bottom:12px}.about-small{margin-top:24px;color:var(--gold);font-size:.78rem}
+    .contact{padding:80px 0}.contact-box{background:var(--paper);color:var(--ink);padding:42px;display:grid;grid-template-columns:1.1fr 1fr;gap:42px}.contact .eyebrow{color:#7f622e;margin-bottom:14px}.contact p{color:#59636b;font-size:.89rem;margin-top:14px}.contact-details{align-self:center;min-width:0}.contact .button{background:var(--navy);border-color:var(--navy);color:white;width:100%}.contact .button:hover{background:#2b404f}.contact-details a.email{display:block;text-align:center;overflow-wrap:anywhere;border-bottom:1px solid #c8c2b7;padding:18px 0 12px;font-size:.95rem}.contact-details a.email:hover{text-decoration:underline}.contact-details .phone{display:block;text-align:center;margin-top:12px;font-size:.85rem}.contact a:focus-visible{outline-color:#806027}footer{border-top:1px solid var(--line);padding:23px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:.73rem;color:var(--muted)}footer a{color:var(--gold)}
+    @media(min-width:1500px){.hero{padding-block:95px 65px}}
+    @media(max-width:900px){.hero{gap:28px}.nav-links{gap:18px}.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.about-grid{gap:40px}.contact-box{gap:28px;padding:30px}}
+    @media(max-width:650px){html{scroll-padding-top:20px}.wrap{width:calc(100% - 36px)}.nav{padding-block:15px;flex-wrap:wrap;gap:12px}.brand{width:140px}.brand img{width:116px;height:43px}.nav-links{order:2;width:100%;justify-content:space-between;gap:10px;font-size:.78rem;border-top:1px solid var(--line);padding-top:5px}.hero{grid-template-columns:1fr;padding-block:42px 32px;gap:34px}.hero h1{font-size:2.5rem;letter-spacing:-1px}.hero-copy{font-size:.94rem}.eyebrow{font-size:.72rem;margin-bottom:16px}.actions .button{flex:1;padding-inline:12px;gap:10px}.drawing{max-width:450px;width:100%;margin-inline:auto;padding:20px}.drawing svg{max-height:300px}.credentials{margin-bottom:40px;padding-block:20px}.credential{padding-inline:12px}.credential strong{font-size:1.06rem}.credential span{font-size:.68rem;line-height:1.7;display:block;margin-top:6px}.section-heading{display:block}.section-heading>p{margin-top:14px}.services,.work,.about,.contact{padding-block:48px}.service-grid{gap:24px 20px}.service{padding-top:16px}.service-no{margin-bottom:12px}.service h3{font-size:.94rem}.service p{font-size:.79rem}.work-panel{grid-template-columns:1fr;padding:24px;gap:24px}.work-cta{border-inline-start:0;padding-inline-start:0;border-top:1px solid var(--line);padding-top:24px}.work-cta .button{width:100%}.about-grid,.contact-box{grid-template-columns:1fr;gap:26px}.about-small{margin-top:12px}.contact-box{padding:26px 22px}.footer-inner{align-items:start;font-size:.68rem}.footer-inner p{max-width:230px}}
+    @media(max-width:360px){.hero h1{font-size:2.15rem}.actions{flex-direction:column}.service-grid{grid-template-columns:1fr}.credential{padding-inline:8px}.credential strong{font-size:.95rem}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}.button:hover{transform:none}}
+  </style>
 </head>
-<body>
-
-    <header>
-        <!-- هنا تم إدراج الحاوية المصلحة وتعديل اسم اللوجو إلى logo1.png بنجاح -->
-        <div class="logo-container">
-            <img src="logo1.png" alt="Salahi Interior Design Logo" class="logo-img">
+<body id="top">
+  <a class="skip" href="#main">انتقل إلى المحتوى</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Salahi3D — بداية الصفحة"><img src="logo1.png" width="284" height="110" alt="صلاحي للتصميم الداخلي — Salahi Interior Design"></a>
+      <nav class="nav-links" aria-label="التنقل الرئيسي"><a href="#services">الخدمات</a><a href="#work">الأعمال</a><a href="#about">عنّي</a><a class="nav-contact" href="#contact">لنبدأ مشروعك ↗</a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="wrap">
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <div class="eyebrow">تصميم داخلي ومعماري · الكويت</div>
+          <h1 id="hero-title">مساحة تشبهك.<br><span>وتفاصيل تصنع الفرق.</span></h1>
+          <p class="hero-copy">أحوّل فكرتك إلى تصميم يجمع بين جمال التفاصيل وراحة الاستخدام. من دراسة المساحة إلى التصوّر ثلاثي الأبعاد والمخططات التنفيذية.</p>
+          <div class="actions"><a class="button" href="https://wa.me/96565664381" target="_blank" rel="noopener noreferrer">ناقش مشروعك <span aria-hidden="true">↗</span></a><a class="button secondary" href="#services">اكتشف الخدمات <span aria-hidden="true">↓</span></a></div>
+          <p class="hero-note">للمساحات السكنية والتجارية · خبرة في التصميم منذ 2012</p>
         </div>
-        
-        <p class="subtitle">مهندس ومصمّم مجسمات وتصاميم هندسية ثلاثية أبعاد (3D Designer)</p>
-        
-        <!-- أزرار التواصل المباشرة والكاملة -->
-        <a href="https://wa.me/965 65664381" target="_blank" class="btn-contact">تواصل معي مباشرة عبر الواتساب</a>
-        <a href="mailto:m.salahi@outlook.com" class="btn-contact" style="background-color: #334155; box-shadow: 0 4px 14px rgba(51, 65, 85, 0.4); margin-right: 10px;">أرسل إيميل للمكتب</a>
-    </header>
-
-    <!-- قسم الخدمات -->
-    <h2 class="section-title">الخدمات الاستشارية والهندسية</h2>
-    <section class="services-container">
-        <div class="service-card">
-            <h3>1. الرفع المساحي وتخطيط المساحات</h3>
-            <p>رفع المقاسات الدقيقة من أرض الموقع مباشرة، وتحويلها إلى مخططات معمارية ثنائية الأبعاد (2D) مدروسة بدقة لاستغلال المساحات بشكل ذكي ومريح.</p>
+        <figure class="drawing">
+          <div class="drawing-head"><span>الفكرة تبدأ بخطّ.</span><span class="drawing-label">SALAHI / 3D</span></div>
+          <svg viewBox="0 0 440 360" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <defs><pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M22 0H0V22" stroke="#dbc08a" stroke-opacity=".07"/></pattern></defs>
+            <rect width="440" height="360" fill="url(#grid)"/>
+            <g stroke="#dbc08a" stroke-width="1.4" stroke-linejoin="round">
+              <path d="M55 251L207 328L389 233L237 157Z" fill="#21333e"/>
+              <path d="M55 251V99L237 24V157M55 99L207 176L389 81V233M207 176V328M237 24L389 81"/>
+              <path d="M78 234V111L154 149V272M87 223V128L143 156V252M96 143L134 162V235L96 216Z" stroke-opacity=".55"/>
+              <path d="M272 141V72L365 105V200M284 137V91L352 116V181M308 100V159M331 108V172" stroke-opacity=".6"/>
+              <path d="M110 255L177 222L249 259L182 294Z" fill="#293b43"/><path d="M110 255V268L182 305L249 270V259M182 294V305"/>
+              <path d="M190 212L278 167L328 192L240 237Z" fill="#3c494a"/><path d="M190 212V232L240 257L328 212V192M240 237V257M203 205V181L279 143L315 161V185M203 181L240 199L315 161M240 199V223"/>
+              <path d="M343 229V161M329 157L343 138L358 157Z" fill="#dbc08a" fill-opacity=".13"/><ellipse cx="343" cy="230" rx="13" ry="6"/>
+              <path d="M51 279L207 357L397 258M39 269L51 289M201 346L212 365M390 248L402 268" stroke-opacity=".3" stroke-width="1"/>
+              <path d="M21 244V101M14 105L28 98M14 248L28 241" stroke-opacity=".3" stroke-width="1"/>
+            </g>
+          </svg>
+          <figcaption><span>من الخطوط الأولى إلى أدق التفاصيل</span><span>رسم توضيحي</span></figcaption>
+        </figure>
+      </section>
+      <div class="credentials" aria-label="الخبرة ومجالات العمل"><div class="credential"><strong>منذ 2012</strong><span>خبرة في التصميم الهندسي</span></div><div class="credential"><strong>3 سنوات</strong><span>إدارة تنفيذية لشركة تصميم بالكويت</span></div><div class="credential"><strong>سكني وتجاري</strong><span>حلول تناسب طبيعة كل مساحة</span></div></div>
+    </div>
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-heading"><div><div class="eyebrow">ما الذي أقدّمه؟</div><h2 id="services-title">رؤية متكاملة لمساحتك.</h2></div><p>كل خدمة تعالج خطوة أساسية في مشروعك، من فهم المكان إلى توضيح تفاصيل التنفيذ.</p></div>
+        <div class="service-grid">
+          <article class="service"><span class="service-no" aria-hidden="true">01 / SPACE PLANNING</span><h3>الرفع المساحي<br>وتخطيط المساحات</h3><p>رفع المقاسات من الموقع وتحويلها إلى مخططات ثنائية الأبعاد، لتوزيع عملي يستثمر المساحة ويجعل الحركة أكثر راحة.</p></article>
+          <article class="service"><span class="service-no" aria-hidden="true">02 / 3D DESIGN</span><h3>التصميم المعماري<br>والداخلي ثلاثي الأبعاد</h3><p>تطوير تصوّر للمساحات السكنية والتجارية، لتشاهد توزيع الأثاث والكتل وتناسق التفاصيل قبل التنفيذ.</p></article>
+          <article class="service"><span class="service-no" aria-hidden="true">03 / VISUALIZATION</span><h3>الإخراج المعماري<br>الواقعي</h3><p>مناظير توضّح الخامات والإضاءة والألوان، وتساعدك على تقييم الخيارات وفهم الشكل النهائي للتصميم.</p></article>
+          <article class="service"><span class="service-no" aria-hidden="true">04 / TECHNICAL DRAWINGS</span><h3>المخططات التنفيذية<br>وتوصيف المواد</h3><p>تحويل التصميم إلى تفاصيل ومخططات تنفيذية وجداول خامات واضحة، لتسهيل تطبيق الفكرة في الموقع.</p></article>
         </div>
-        <div class="service-card">
-            <h3>2. التصميم المعماري والداخلي 3D</h3>
-            <p>ابتكار الهوية البصرية للمشاريع التجارية والسكنية. نجسد أفكارك إلى واقع افتراضي يتيح لك رؤية الفراغات والكتل قبل بدء البناء الفعلي.</p>
-        </div>
-        <div class="service-card">
-            <h3>3. الإخراج المعماري الواقعي</h3>
-            <p>إنتاج لقطات ومناظير فائقة الدقة (Rendering) تُظهر تفاصيل المواد، الخامات، وتوزيع الإضاءة بدقة متناهية لتتخيل مشروعك بأقرب صورة للواقع.</p>
-        </div>
-        <div class="service-card">
-            <h3>4. المخططات التنفيذية وتوصيف المواد</h3>
-            <p>إعداد المخططات التنفيذية الكاملة (Shop Drawings) الجاهزة للتنفيذ الفوري في الموقع، مع تقديم جداول الخامات لضمان جودة التطبيق والتشطيب.</p>
-        </div>
+      </div>
     </section>
-
-    <!-- قسم نبذة عن المهندس -->
-    <section class="about-section">
-        <h2 class="section-title" style="margin-top: 0;">من هو المهندس خلف Salahi3D؟</h2>
-        <div class="about-content">
-            بدأت رحلتي وشغفي في عالم التصميم الهندسي منذ عام <strong>2012</strong>. على مدار أكثر من عقد من الزمان، قمت بابتكار وتطوير عدد لا يحصى من المشاريع السكنية الراقية والمشاريع التجارية الناجحة. 
-            <br><br>
-            عززت خبرتي العملية بالعمل كـ <strong>مدير تنفيذي لشركة تصميم داخلي في دولة الكويت لمدة 3 سنوات</strong>، مما أكسبني فهماً عميقاً لمتطلبات السوق الخليجي، وإدارة المشاريع من الفكرة الفنية وحتى التشطيب النهائي الجاهز للتنفيذ. فخور اليوم ببناء شبكة واسعة من العملاء المستمرين الذين يثقون برؤيتي الهندسية ولمستي الإبداعية الفريدة.
-        </div>
+    <section class="work wrap" id="work" aria-labelledby="work-title">
+      <div class="section-heading"><div><div class="eyebrow">الأعمال والتصاميم</div><h2 id="work-title">تعرّف إلى أسلوبي في التصميم.</h2></div></div>
+      <!-- استبدل هذه اللوحة ببطاقات المشاريع عند توفر الصور والأسماء المعتمدة. -->
+      <div class="work-panel"><div><h3>معرض الأعمال قيد التجهيز</h3><p>إلى حين إضافة الصور والتفاصيل هنا، يمكنك التواصل معي لطلب نماذج أعمال تناسب نوع مشروعك.</p><div class="work-types"><span class="tag">تصميم داخلي</span><span class="tag">تصميم معماري</span><span class="tag">مخططات هندسية</span></div></div><div class="work-cta"><a class="button secondary" href="https://wa.me/96565664381?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%20%D8%B9%D9%84%D9%89%20%D9%86%D9%85%D8%A7%D8%B0%D8%AC%20%D9%85%D9%86%20%D8%A3%D8%B9%D9%85%D8%A7%D9%84%D9%83." target="_blank" rel="noopener noreferrer">اطلب نماذج أعمال <span aria-hidden="true">↗</span></a><p>اذكر نوع المساحة والأسلوب الذي تفضّله، لنبدأ من صورة أقرب إلى فكرتك.</p></div></div>
     </section>
-
-    <!-- معرض الأعمال جاهز للصور لاحقاً -->
-    <h2 class="section-title">معرض المشاريع والتصاميم الهندسية</h2>
-    <section class="gallery">
-        <div class="card">
-            <img src="https://placeholder.com" alt="تصميم معماري خارجي">
-            <div class="card-content">
-                <h3>اسم المشروع الهندسي الأول</h3>
-                <p>هنا سنكتب وصفاً مختصراً للمشروع، البرامج الهندسية التي استخدمتها وتفاصيل الإضاءة وريندر الواجهات الخارحية.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="https://placeholder.com" alt="تصميم داخلي">
-            <div class="card-content">
-                <h3>اسم المشروع الهندسي الثاني</h3>
-                <p>هنا سنكتب وصفاً عن توزيع المساحات، الخامات المستخدمة في التصميم ثلاثي الأبعاد، وتنسيق الأثاث الداخلي المودرن والكلاسيك.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="https://placeholder.com" alt="مخطط هندسي">
-            <div class="card-content">
-                <h3>اسم المشروع الهندسي الثالث</h3>
-                <p>هنا سنضع تفاصيل المشروع الثالث ونبذة عن الابتكار المعماري أو المنظور الهندسي ثلاثي الأبعاد الذي قمت بتنفيذه للزبون.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>جميع الحقوق محفوظة © 2026 | معرض أعمال Salahi3D الهندسي</p>
-    </footer>
-
+    <section class="about" id="about" aria-labelledby="about-title"><div class="wrap about-grid"><div><div class="eyebrow">خلف Salahi3D</div><h2 id="about-title">شغف بالتفاصيل.<br>وخبرة تفهم المساحة.</h2><div class="about-small" dir="ltr">SALAHI · INTERIOR DESIGN</div></div><div><p>بدأت رحلتي في التصميم الهندسي عام <strong>2012</strong>، وعملت على تطوير مشاريع سكنية وتجارية تجمع بين الرؤية الجمالية واحتياجات الاستخدام اليومي.</p><p>عزّزت خبرتي بالعمل <strong>مديراً تنفيذياً لشركة تصميم داخلي في الكويت لمدة ثلاث سنوات</strong>، بما يشمل فهم متطلبات السوق الخليجي وإدارة مراحل المشروع من الفكرة إلى تفاصيل التشطيب.</p></div></div></section>
+    <section class="contact wrap" id="contact" aria-labelledby="contact-title"><div class="contact-box"><div><div class="eyebrow">الخطوة الأولى تبدأ بحديث</div><h2 id="contact-title">لديك فكرة لمساحتك؟<br>دعنا نطوّرها معاً.</h2><p>أرسل نوع المشروع، المساحة التقريبية وموقعه. وإذا كان لديك مخطط أو صور للمكان، شاركني إياها عند التواصل.</p></div><div class="contact-details"><a class="button" href="https://wa.me/96565664381" target="_blank" rel="noopener noreferrer">تواصل عبر واتساب <span aria-hidden="true">↗</span></a><a class="email" href="mailto:m.salahi@outlook.com"><bdi>m.salahi@outlook.com</bdi></a><a class="phone" href="tel:+96565664381" aria-label="اتصال هاتفي: ‎+965 6566 4381"><bdi dir="ltr">+965 6566 4381</bdi></a></div></div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><p>© 2026 Salahi3D · جميع الحقوق محفوظة</p><a href="#top">العودة للأعلى ↑</a></div></footer>
 </body>
 </html>
